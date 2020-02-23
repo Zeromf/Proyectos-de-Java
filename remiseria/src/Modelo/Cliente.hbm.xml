@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05/05/2018 19:47:40 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Modelo.Cliente" table="cliente" catalog="remiseria" optimistic-lock="version">
+        <id name="codigo" type="java.lang.Integer">
+            <column name="codigo" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="15" not-null="true" />
+        </property>
+        <property name="apellido" type="string">
+            <column name="apellido" length="15" not-null="true" />
+        </property>
+        <property name="dni" type="string">
+            <column name="DNI" length="10" not-null="true" />
+        </property>
+        <property name="fechaNaci" type="date">
+            <column name="fecha_naci" length="10" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="15" />
+        </property>
+        <property name="telefono" type="java.lang.Integer">
+            <column name="telefono" />
+        </property>
+    </class>
+</hibernate-mapping>
