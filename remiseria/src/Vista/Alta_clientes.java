@@ -1,4 +1,4 @@
-package Vistas;
+package Vista;
 
 import java.text.DateFormat;
 import java.text.ParseException;
