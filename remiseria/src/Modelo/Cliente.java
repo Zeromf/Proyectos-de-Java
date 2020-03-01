@@ -1,5 +1,5 @@
 package Modelo;
-// Generated 05/05/2018 19:47:37 by Hibernate Tools 4.3.1
+// Generated 01/03/2020 02:51:00 by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
@@ -10,38 +10,40 @@ import java.util.Date;
 public class Cliente  implements java.io.Serializable {
 
 
-     private Integer codigo;
+     private int codigo;
      private String nombre;
      private String apellido;
      private String dni;
      private Date fechaNaci;
      private String direccion;
-     private Integer telefono;
+     private int telefono;
 
     public Cliente() {
     }
 
-	
-    public Cliente(String nombre, String apellido, String dni) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.dni = dni;
-    }
-    public Cliente(String nombre, String apellido, String dni, Date fechaNaci, String direccion, Integer telefono) {
+   /* public Cliente(int codigo, String nombre, String apellido, String dni, Date fechaNaci, String direccion, int telefono) {
+       this.codigo = codigo;
        this.nombre = nombre;
        this.apellido = apellido;
        this.dni = dni;
        this.fechaNaci = fechaNaci;
        this.direccion = direccion;
        this.telefono = telefono;
-    }
-   
+    }*/
+    public Cliente(String nombre, String apellido, String dni, Date fechaNaci, String direccion, Integer telefono) {
+        this.nombre = nombre;
+       this.apellido = apellido;
+       this.dni = dni;
+       this.fechaNaci = fechaNaci;
+       this.direccion = direccion;
+       this.telefono = telefono;    }
 
-    public Integer getCodigo() {
+   
+    public int getCodigo() {
         return this.codigo;
     }
     
-    public void setCodigo(Integer codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
     public String getNombre() {
@@ -79,17 +81,12 @@ public class Cliente  implements java.io.Serializable {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
-    public Integer getTelefono() {
+    public int getTelefono() {
         return this.telefono;
     }
     
-    public void setTelefono(Integer telefono) {
+    public void setTelefono(int telefono) {
         this.telefono = telefono;
-    }
-
-    @Override
-    public String toString() {
-        return "Cliente{" + "codigo=" + codigo + ", nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", fechaNaci=" + fechaNaci + ", direccion=" + direccion + ", telefono=" + telefono + '}';
     }
 
 

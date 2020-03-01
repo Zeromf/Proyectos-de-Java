@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 05/05/2018 19:47:40 by Hibernate Tools 4.3.1 -->
+<!-- Generated 01/03/2020 02:51:00 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="Modelo.Cliente" table="cliente" catalog="remiseria" optimistic-lock="version">
-        <id name="codigo" type="java.lang.Integer">
+        <id name="codigo" type="int">
             <column name="codigo" />
-            <generator class="identity" />
+            <generator class="assigned" />
         </id>
         <property name="nombre" type="string">
             <column name="nombre" length="15" not-null="true" />
@@ -15,16 +15,16 @@
             <column name="apellido" length="15" not-null="true" />
         </property>
         <property name="dni" type="string">
-            <column name="DNI" length="10" not-null="true" />
+            <column name="dni" length="10" not-null="true" />
         </property>
         <property name="fechaNaci" type="date">
-            <column name="fecha_naci" length="10" />
+            <column name="fechaNaci" length="10" not-null="true" />
         </property>
         <property name="direccion" type="string">
-            <column name="direccion" length="15" />
+            <column name="direccion" length="15" not-null="true" />
         </property>
-        <property name="telefono" type="java.lang.Integer">
-            <column name="telefono" />
+        <property name="telefono" type="int">
+            <column name="telefono" not-null="true" />
         </property>
     </class>
 </hibernate-mapping>

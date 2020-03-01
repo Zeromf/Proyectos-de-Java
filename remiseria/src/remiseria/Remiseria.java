@@ -7,20 +7,20 @@ package remiseria;
 
 /**
  *
- * @author enzo
+ * @author Enzo
  */
 public class Remiseria {
 
-    /**l
+    /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
          new Vistas.Alta_clientes().setVisible(true);
-     //    new Vistas.Baja_Cliente().setVisible(true);
+        new Vistas.Baja_Cliente().setVisible(true);
 
-    
-    
-    
+        
+        
+        
     }
     
 }
